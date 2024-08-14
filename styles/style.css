@@ -1,0 +1,408 @@
+:root {
+  --main-color: #0095f6;
+  --text-color: #262626;
+  --background-color: #FFFFFF;
+  --border-color: 219, 219, 219;
+  --footer-text-color: #A8A8A8;
+}
+
+.links-container {
+  text-align: center;
+}
+
+.footer-span-container {
+  margin-top: 20px; /* Ajustez la valeur pour obtenir l'espacement désiré */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+}
+
+body{
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#content-container{
+  display: flex;
+  align-items: center;
+  margin: 64px auto 0;
+  padding-bottom: 64px;
+}
+
+.phones, 
+.display-phone{
+  margin: 0 20px;
+}
+
+.display-phone{
+  position: relative;
+}
+
+.picture{
+  position: absolute;
+  top: -513px;
+  left: 98px;
+  opacity: 0;
+  animation-name: animation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.user{
+  margin: 12px 0 0;
+  justify-content: center;
+  top: .45em;
+}
+
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px; /* change the width of the container */
+  height: 470px; /* change the height of the container */
+}
+
+.login-container, 
+.signup-container{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(var(--border-color),1);
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.instagram-logo-box{
+  width: 175px;
+  margin: 22px 86.5px 0;
+}
+
+.instagram-logo{
+  height: 51px;
+}
+
+#login-post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.inputs-container{
+  margin: 0 40px 6px;
+  width: 100%;
+}
+
+.inputs-container input{
+  background: rgb(250, 250, 250);
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  border: 1px solid rgba(var(--border-color),1);
+  border-radius: 2px;
+  outline: none;
+}
+
+.inputs-container input:focus{
+  border-color: rgb(180, 180, 180);
+}
+
+.login-button{
+  background-color: #4cb5f9;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  width: 94%;
+  margin: 8px 40px;
+  box-sizing: content-box;
+}
+
+.login-button:hover{
+  background-color: #1976f2;
+}
+
+.or-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 10px 40px 18px;
+  width: 100%;
+}
+
+.line{
+  background-color: rgb(var(--border-color));
+  height: 1px;
+  position: relative;
+  top: .45em;
+}
+
+.or{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(114, 114, 114);
+}
+
+.facebook-container{
+  text-align: center;
+  margin: 8px 40px;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  align-items: center; 
+}
+
+.facebook-logo{
+  width: 16px;
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center; 
+}
+
+.facebook-login{
+  color: #385195;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  display: inline-flex;
+  align-items: center; 
+  font-weight: bold;
+}
+
+.password-forgot{
+  color: rgb(0,55,107);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.signup-container p, 
+.get-container p{
+  color: var(--text-color);
+}
+
+.signup-container p{
+  margin: 15px;
+  text-align: center;
+}
+
+.signup{
+  color: #009cf7;
+  font-weight: bold;
+}
+
+.get-container{
+  display: flex;
+  flex-direction: column;
+  height: 102px;
+  width: 350px;
+}
+
+.get-container p{
+  margin: 10px 20px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.download-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.download-appstore{
+  margin-right: 8px;
+}
+
+.appstore, 
+.googleplay{
+  margin-left: 10px;
+  height: 40px;
+  width: 136px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.links-container {
+  text-align: center;
+  margin-bottom: 40px; /* Espacement entre la liste de liens et le texte de copyright */
+}
+
+.footer-span-container {
+  margin-top: 40px; /* Ajustez cette valeur pour éloigner le texte de copyright de la liste */
+}
+
+.footer-span {
+  color: var(--footer-text-color);
+  font-size: 12px;
+}
+
+.links-list{
+  text-align: center;
+}
+
+.links-list li{
+  display: inline-block;
+}
+
+.links-list li a{
+  color: var(--footer-text-color);
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 16px 7px 0;
+}
+
+.footer-span{
+  color: rgba(142,142,142,1);
+  font-size: 12px;
+  margin: 20px 0;
+  top: .1em;
+}
+
+@media(max-width: 1005px){
+
+  .page-footer{
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .links-list{
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+}
+
+@media(max-width: 785px){
+
+  .phones{
+    display: none;
+  }
+
+  .page-footer{
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .links-container, 
+  .footer-span-container {
+    margin-top: 20px; /* Ajustez la valeur pour obtenir l'espacement désiré */
+  }
+
+  .links-list{
+    margin-bottom: 0;
+  }
+
+  .links-list,
+  .footer-span-container{
+    text-align: center;
+  }
+
+  .links-list li{
+    padding-bottom: 10px;
+  }
+
+}
+
+@media(max-width:400px){
+
+  .download-container{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+}
+
+@keyframes animation{
+  25%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+}
+
+.picture:nth-child(1){
+  animation-delay: 5s;
+}
+.picture:nth-child(2){
+  animation-delay: 10s;
+}
+.picture:nth-child(3){
+  animation-delay: 15s;
+}
+.picture:nth-child(4){
+  animation-delay: 20s;
+}
+.picture:nth-child(5){
+  animation-delay: 25s;
+}
+
+.password-return br {
+  content: ""; /* Ajoute un espace avec une hauteur réduite */
+  display: block;
+  margin: 0; /* Assure que la marge est nulle */
+  height: 10px; /* Ajustez cette valeur pour la hauteur désirée */
+}
+
+.illegal-content {
+  color: var(--footer-text-color);
+  font-size: 12px;
+  margin: 0;
+}
+
+.illegal-content br {
+  content: ""; /* Ajoute un espace avec une hauteur réduite */
+  display: block;
+  margin: 0; /* Assure que la marge est nulle */
+  height: 1px; /* Ajustez cette valeur pour la hauteur désirée */
+}
+
+.illegal-link {
+  color: #1a1d21; /* Couleur du lien */
+  font-size: 12px;
+}
+
+.illegal-link:hover {
+  text-decoration: underline; /* Souligner le lien */
+}
+
+.footer-span br {
+  content: ""; /* Ajoute un espace avec une hauteur réduite */
+  display: block;
+  margin: 0; /* Assure que la marge est nulle */
+  height: 5px; /* Ajustez cette valeur pour la hauteur désirée */
+}
+
+.input-field {
+  font-size: smaller;
+  padding: 150px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+
+.download-microsoft {
+  padding-left: 8px;
+  border-radius: 20px;
+}
+
+.download {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;;
+}

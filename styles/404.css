@@ -1,0 +1,247 @@
+:root {
+    --footer-text-color: #a8a8a8;
+}
+
+body {
+    background-color: black;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 30px;
+    color: #F5F5F5;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 30px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+a {
+    color: #E0F1FF;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+/* Styles pour la barre latérale et le contenu principal */
+.sidebar-line {
+    position: absolute;
+    top: 0;
+    left: 335px;
+    width: 1px;
+    height: 100%;
+    background-color: #303030;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 235px;
+}
+
+.menu-list li {
+    margin: 15px 0;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;   
+}
+
+.bottom-list a {
+    margin-bottom: 20px;
+}
+
+.bottom-list li {
+    margin-bottom: 35px;
+}
+
+.bottom-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list li {
+    margin: 15px 0;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list svg {
+    margin-right: 15px;
+}
+
+.bottom-list svg {
+    margin-right: 15px;
+}
+
+.main-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.page-footer {
+    text-align: center;
+    font-weight: lighter;
+    padding: 40px;
+    margin-top: 635px;
+    margin-left: 60px;
+}
+
+.links-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-list li {
+    margin: 0 6px;
+    margin-bottom: 10px;
+}
+
+.links-list li a {
+    color: var(--footer-text-color);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-span {
+    color: var(--footer-text-color);
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.instagram {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.text {
+    margin-left: 80px;
+    position: relative;
+    top: -35px;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+.mobile-text {
+    display: none;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .return {
+        position: relative;
+        top: -30px;
+    }
+
+    .mobile-text {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-text a {
+        color: #E0F1FF;
+        display: inline; /* Assurez-vous que le lien est en ligne avec le texte */
+        padding: 0;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+
+    .page-footer {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        border-top: 1px solid #303030;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    .bottom-nav a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .bottom-nav svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .page-footer {
+        display: none;
+    }
+}

