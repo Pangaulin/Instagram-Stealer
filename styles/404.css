@@ -68,13 +68,6 @@ a {
     margin-top: 235px;
 }
 
-.menu-list li {
-    margin: 15px 0;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;   
-}
-
 .bottom-list a {
     margin-bottom: 20px;
 }
@@ -176,6 +169,166 @@ a {
 
 .mobile-text {
     display: none;
+}
+
+.notext-menulist {
+    display: none;
+}
+
+.notext-bottomlist {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .page-footer {
+        margin-top: 400px;
+    }
+
+    .sidebar {
+        
+        width: 75px;
+    }
+
+    .bottom-list {
+        display: none;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .notext-menulist li {
+        margin: 10px 0;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .notext-menulist li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .notext-menulist svg {
+        margin-right: 15px;
+    }
+
+    .notext-menulist {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin-right: 25px;    
+    }
+
+    .notext-bottomlist li {
+        margin: 10px 0;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .notext-bottomlist li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .notext-bottomlist svg {
+        margin-right: 15px;
+    }
+
+    .notext-bottomlist {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin-top: 90px;
+        margin-right: 25px; 
+    }
+
+    .instagram-icon {
+        position: relative;
+        top: -15px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-line {
+        left: 75px;
+    }
+
+    .page-footer {
+        margin: 0;
+        position: absolute;
+        top: 600px;
+        left: 75px;
+    }
+
+    .page-footer {
+        font-size: 10px; /* Réduisez la taille de la police */
+        margin: 10px 0; /* Ajustez les marges */
+    }
+
+    .page-footer a {
+        margin: 0 2px;
+    }
+    
+    .main-content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .instagram-icon {
+        position: relative;
+        top: -15px;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-right: 100px;
+    }
+
+    .page-footer {
+        position: absolute;
+        margin: 0;
+        top: 560px;
+        left: 215px;
+    }
+
+    .menu-list li {
+        margin-bottom: 33px;
+    }
+
+    .bottom-list {
+        margin: 0;
+        position: absolute;
+        top: 605px;
+    }
+
+    .bottom-list li {
+        margin-bottom: 30px;
+    }
+
+    .sidebar-line {
+        left: 240px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .bottom-list {
+        margin: 0;
+        margin-top: 190px;
+    }
 }
 
 /* Styles pour les petits écrans */
