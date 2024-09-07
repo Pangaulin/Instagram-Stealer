@@ -8,6 +8,6 @@ This page is a simple clone of the Instagram login page. The website is responsi
 - Add your e-mail if you want to get notifications
 - Enjoy !
 
-##License
+## License
 
 See the license [here](https://github.com/Pangaulin/Instagram-Stealer/blob/main/LICENSE.txt)
